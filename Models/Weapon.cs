@@ -1,4 +1,4 @@
-﻿namespace D2R_Items.Models
+﻿namespace D2RItems.Models
 {
     public class Weapon
     {

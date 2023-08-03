@@ -1,14 +1,7 @@
-using D2R_Items.Services;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.SqlServer;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-
-builder.Services.AddTransient<JsonService>(); ;
-builder.Services.AddTransient<DataAccessService>();
 
 var app = builder.Build();
 
