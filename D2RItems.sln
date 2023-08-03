@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D2R-Items", "D2R-Items.csproj", "{437664B7-4FBD-42BD-AA12-32C41E13487D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D2R-Items", "D2RItems.csproj", "{437664B7-4FBD-42BD-AA12-32C41E13487D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

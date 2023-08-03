@@ -41,9 +41,13 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Dapper": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[2.0.143, )"
+              "version": "[7.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.9, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",

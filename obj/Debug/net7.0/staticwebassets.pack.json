@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\D2R-Items.bundle.scp.css",
-      "PackagePath": "staticwebassets\\D2R-Items.bundle.scp.css"
+      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\D2RItems.bundle.scp.css",
+      "PackagePath": "staticwebassets\\D2RItems.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\css\\site.css",
@@ -269,20 +269,20 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.D2R-Items.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.D2RItems.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.D2R-Items.props",
-      "PackagePath": "build\\D2R-Items.props"
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.D2RItems.props",
+      "PackagePath": "build\\D2RItems.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.D2R-Items.props",
-      "PackagePath": "buildMultiTargeting\\D2R-Items.props"
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.D2RItems.props",
+      "PackagePath": "buildMultiTargeting\\D2RItems.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.D2R-Items.props",
-      "PackagePath": "buildTransitive\\D2R-Items.props"
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.D2RItems.props",
+      "PackagePath": "buildTransitive\\D2RItems.props"
     }
   ],
   "ElementsToRemove": []
