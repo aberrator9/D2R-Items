@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\qbdth\\repos\\D2R-Items\\D2R-Items.csproj": {}
+    "C:\\Users\\qbdth\\repos\\D2R-Items\\D2R-Items.csproj": {}
   },
   "projects": {
-    "c:\\Users\\qbdth\\repos\\D2R-Items\\D2R-Items.csproj": {
+    "C:\\Users\\qbdth\\repos\\D2R-Items\\D2R-Items.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\qbdth\\repos\\D2R-Items\\D2R-Items.csproj",
+        "projectUniqueName": "C:\\Users\\qbdth\\repos\\D2R-Items\\D2R-Items.csproj",
         "projectName": "D2R-Items",
-        "projectPath": "c:\\Users\\qbdth\\repos\\D2R-Items\\D2R-Items.csproj",
+        "projectPath": "C:\\Users\\qbdth\\repos\\D2R-Items\\D2R-Items.csproj",
         "packagesPath": "C:\\Users\\qbdth\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\qbdth\\repos\\D2R-Items\\obj\\",
+        "outputPath": "C:\\Users\\qbdth\\repos\\D2R-Items\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\qbdth\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,6 +21,8 @@
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,6 +41,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.143, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"

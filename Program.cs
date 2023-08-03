@@ -4,7 +4,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddTransient<JsonHelper>();
+builder.Services.AddTransient<JsonService>(); ;
+builder.Services.AddTransient<DataAccessService>();
 
 var app = builder.Build();
 

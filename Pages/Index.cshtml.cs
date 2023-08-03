@@ -7,17 +7,23 @@ namespace D2R_Items.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
-        public JsonHelper JsonHelper;
+        public JsonService JsonService;
+        public DataAccessService DataAccess;
 
-        public IndexModel(ILogger<IndexModel> logger, JsonHelper jsonHelper)
+        public IndexModel(
+            ILogger<IndexModel> logger,
+            JsonService jsonService,
+            DataAccessService dataAccess)
         {
             _logger = logger;
-            JsonHelper = jsonHelper;
+            JsonService = jsonService;
+            DataAccess = dataAccess;
         }
 
         public void OnGet()
         {
-            JsonHelper.StripUnusedProperties();
+            JsonService.StripUnusedProperties();
+            DataAccess.Query("SELECT * FROM weapons");
         }
     }
 }

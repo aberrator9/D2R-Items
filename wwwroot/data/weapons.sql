@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS weapons(
+    Id INT PRIMARY KEY NOT NULL,
+    Name VARCHAR(30) NOT NULL,
+    Tier VARCHAR(30) NOT NULL,
+    Type VARCHAR(30) NOT NULL,
+    Sockets VARCHAR(30) NOT NULL
+);
+--@block
+DROP TABLE weapons;

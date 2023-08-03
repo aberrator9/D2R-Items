@@ -29,3 +29,6 @@ C:\Users\qbdth\Repos\D2R-Items\obj\Debug\net7.0\refint\D2R-Items.dll
 C:\Users\qbdth\Repos\D2R-Items\obj\Debug\net7.0\D2R-Items.pdb
 C:\Users\qbdth\Repos\D2R-Items\obj\Debug\net7.0\D2R-Items.genruntimeconfig.cache
 C:\Users\qbdth\Repos\D2R-Items\obj\Debug\net7.0\ref\D2R-Items.dll
+C:\Users\qbdth\repos\D2R-Items\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\qbdth\repos\D2R-Items\obj\Debug\net7.0\D2R-Items.csproj.CopyComplete
+C:\Users\qbdth\repos\D2R-Items\bin\Debug\net7.0\Dapper.dll
