@@ -1,0 +1,19 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "d2r",
+            "database": "d2r",
+            "username": "root",
+            "connectionTimeout": 1,
+            "askForPassword": true
+        }
+    ]
+}

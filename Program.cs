@@ -1,7 +1,10 @@
+using D2R_Items.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddTransient<JsonHelper>();
 
 var app = builder.Build();
 
