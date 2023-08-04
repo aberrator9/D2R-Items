@@ -3,16 +3,19 @@ using D2RItems.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
 namespace D2RItems.Migrations
 {
-    [DbContext(typeof(D2RContext))]
-    partial class D2RContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(D2RItemsContext))]
+    [Migration("20230804195336_InitialCreate")]
+    partial class InitialCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -33,13 +36,18 @@ namespace D2RItems.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Sockets")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("OneHandDmg")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Sockets")
+                        .HasColumnType("int");
 
                     b.Property<string>("Tier")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TwoHandDmg")
+                        .HasColumnType("int");
 
                     b.Property<string>("Type")
                         .IsRequired()
@@ -47,7 +55,7 @@ namespace D2RItems.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Weapons");
+                    b.ToTable("Weapon");
                 });
 #pragma warning restore 612, 618
         }

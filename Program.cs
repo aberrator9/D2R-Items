@@ -6,8 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddDbContext<D2RContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("D2RContext") ?? throw new InvalidOperationException("Connection string 'D2RContext' not found.")));
+builder.Services.AddDbContext<D2RItemsContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("D2RItemsContext") ?? throw new InvalidOperationException("Connection string 'D2RItemsContext' not found.")));
 
 var app = builder.Build();
 

@@ -1,0 +1,66 @@
+﻿@page
+@model D2RItems.Models.Weapons.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Weapon[0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Weapon[0].Tier)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Weapon[0].Type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Weapon[0].Sockets)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Weapon[0].OneHandDmg)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Weapon[0].TwoHandDmg)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Weapon) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tier)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sockets)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OneHandDmg)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TwoHandDmg)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "D/cQRbpiCVUqtgvT+EpjPTAc/T2TkQwG+mcJvnPEM2LYfzzj25r0t/enbblz6lUlmiMs5NtEoVWxzxR4BqQyfg==",
+  "dgSpecHash": "+gejlQkJuapGL2eZv7jYKj7xCfp4w9qWy7V3VKRZr5xMznHxrVEBhgxqdJR0c5wN7Mx5lOtFl5vP4xFEE7wpSA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\qbdth\\repos\\d2r-items\\D2RItems.csproj",
+  "projectFilePath": "C:\\Users\\qbdth\\Repos\\D2R-Items\\D2RItems.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\qbdth\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\qbdth\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
@@ -82,6 +82,7 @@
     "C:\\Users\\qbdth\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.9\\microsoft.entityframeworkcore.design.7.0.9.nupkg.sha512",
     "C:\\Users\\qbdth\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.9\\microsoft.entityframeworkcore.relational.7.0.9.nupkg.sha512",
     "C:\\Users\\qbdth\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.9\\microsoft.entityframeworkcore.sqlserver.7.0.9.nupkg.sha512",
+    "C:\\Users\\qbdth\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.9\\microsoft.entityframeworkcore.tools.7.0.9.nupkg.sha512",
     "C:\\Users\\qbdth\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\qbdth\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "C:\\Users\\qbdth\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
