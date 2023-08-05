@@ -37,6 +37,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\font\\AvQest.ttf",
+      "PackagePath": "staticwebassets\\font\\AvQest.ttf"
+    },
+    {
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\font\\Diabolica-VRBB.ttf",
+      "PackagePath": "staticwebassets\\font\\Diabolica-VRBB.ttf"
+    },
+    {
       "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
