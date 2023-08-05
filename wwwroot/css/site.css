@@ -2,9 +2,19 @@ html {
   font-size: 14px;
 }
 
+@font-face {
+    font-family: AvQuest;
+    src: url(../font/Avqest.ttf);
+}
+
+@font-face {
+    font-family: Diabolica;
+    src:url(../font/Diabolica-VRBB.ttf)
+}
+
 @media (min-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
@@ -18,5 +28,6 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    font-family: AvQuest;
 }
