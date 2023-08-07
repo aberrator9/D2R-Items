@@ -55,11 +55,22 @@ public class PopulateData
 						twoHandDmg = (int)item.Value["maxmisdam"];
 					}
 
+					string tier = "Normal";
+					if (item.Key == (string)item.Value["ubercode"])
+					{
+						tier = "Exceptional";
+					}
+					else if(item.Key == (string)item.Value["ultracode"]) 
+					{ 
+						tier = "Elite"; 
+					}
+
+
 					context.Weapon.Add(
 						new Weapon()
 						{
 							Name = (string)item.Value["name"],
-							Tier = "Elite",
+							Tier = tier,
 							Type = Weapon.WeaponTypeTags[(string)item.Value["type"]][0],
 							Sockets = item.Value["gemsockets"] == null ? 0 : (int)item.Value["gemsockets"],
 							OneHandDmg = item.Value["maxdam"] == null ? 0 : (int)item.Value["maxdam"],
