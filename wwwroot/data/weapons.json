@@ -1,5 +1,4 @@
 {
-    "root": {
         "2ax": {
             "name": "Double Axe",
             "type": "axe",
@@ -25873,5 +25872,4 @@
             "lineNumber": 11,
             "classid": 11
         }
-    }
 }
