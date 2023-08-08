@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using D2RItems.Data;
 using D2RItems.Models;
 
-namespace D2RItems.Models.Weapons
+namespace D2RItems.Pages.Armors
 {
     public class EditModel : PageModel
     {
@@ -21,21 +21,21 @@ namespace D2RItems.Models.Weapons
         }
 
         [BindProperty]
-        public Weapon Weapon { get; set; } = default!;
+        public Armor Armor { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.Weapons == null)
+            if (id == null || _context.Armors == null)
             {
                 return NotFound();
             }
 
-            var weapon =  await _context.Weapons.FirstOrDefaultAsync(m => m.Id == id);
-            if (weapon == null)
+            var armor =  await _context.Armors.FirstOrDefaultAsync(m => m.Id == id);
+            if (armor == null)
             {
                 return NotFound();
             }
-            Weapon = weapon;
+            Armor = armor;
             return Page();
         }
 
@@ -48,7 +48,7 @@ namespace D2RItems.Models.Weapons
                 return Page();
             }
 
-            _context.Attach(Weapon).State = EntityState.Modified;
+            _context.Attach(Armor).State = EntityState.Modified;
 
             try
             {
@@ -56,7 +56,7 @@ namespace D2RItems.Models.Weapons
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!WeaponExists(Weapon.Id))
+                if (!ArmorExists(Armor.Id))
                 {
                     return NotFound();
                 }
@@ -69,9 +69,9 @@ namespace D2RItems.Models.Weapons
             return RedirectToPage("./Index");
         }
 
-        private bool WeaponExists(int id)
+        private bool ArmorExists(int id)
         {
-          return (_context.Weapons?.Any(e => e.Id == id)).GetValueOrDefault();
+          return (_context.Armors?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

@@ -1,0 +1,61 @@
+﻿@page
+@model D2RItems.Pages.Armors.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Armor</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Armor.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Armor.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Armor.Tier)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Armor.Tier)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Armor.Slot)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Armor.Slot)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Armor.Sockets)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Armor.Sockets)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Armor.Class)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Armor.Class)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Armor.Weight)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Armor.Weight)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Armor.ReqStr)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Armor.ReqStr)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Armor?.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

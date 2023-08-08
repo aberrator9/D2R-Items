@@ -1,0 +1,64 @@
+﻿@page
+@model D2RItems.Pages.Armors.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Armor</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Armor.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Armor.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Armor.Tier)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Armor.Tier)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Armor.Slot)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Armor.Slot)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Armor.Sockets)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Armor.Sockets)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Armor.Class)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Armor.Class)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Armor.Weight)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Armor.Weight)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Armor.ReqStr)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Armor.ReqStr)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Armor.Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

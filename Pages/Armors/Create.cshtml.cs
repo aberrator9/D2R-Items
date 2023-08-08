@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using D2RItems.Data;
 using D2RItems.Models;
 
-namespace D2RItems.Models.Weapons
+namespace D2RItems.Pages.Armors
 {
     public class CreateModel : PageModel
     {
@@ -25,18 +25,18 @@ namespace D2RItems.Models.Weapons
         }
 
         [BindProperty]
-        public Weapon Weapon { get; set; } = default!;
+        public Armor Armor { get; set; } = default!;
         
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
-          if (!ModelState.IsValid || _context.Weapons == null || Weapon == null)
+          if (!ModelState.IsValid || _context.Armors == null || Armor == null)
             {
                 return Page();
             }
 
-            _context.Weapons.Add(Weapon);
+            _context.Armors.Add(Armor);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

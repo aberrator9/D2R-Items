@@ -2,82 +2,82 @@
 @model D2RItems.Models.Weapons.IndexModel
 
 @{
-	ViewData["Title"] = "Index";
+    ViewData["Title"] = "Weapon Bases";
 }
 
 <h1>Weapon Bases</h1>
 
 <table class="table">
-	<thead>
-		<tr>
-			<th>
-				<a asp-page="./Index" asp-route-sortOrder="@Model.NameSort">
-					@Html.DisplayNameFor(model => model.Weapons[0].Name)
-				</a>
-			</th>
-			<th>
-				<a asp-page="./Index" asp-route-sortOrder="@Model.TierSort">
-					@Html.DisplayNameFor(model => model.Weapons[0].Tier)
-				</a>
-			</th>
-			<th>
-				<a asp-page="./Index" asp-route-sortOrder="@Model.TypeSort">
-					@Html.DisplayNameFor(model => model.Weapons[0].Type)
-				</a>
-			</th>
-			<th>
-				<a asp-page="./Index" asp-route-sortOrder="@Model.SocketsSort">
-					@Html.DisplayNameFor(model => model.Weapons[0].Sockets)
-				</a>
-			</th>
-			<th>
-				<a asp-page="./Index" asp-route-sortOrder="@Model.OneHandDmgSort">
-					@Html.DisplayNameFor(model => model.Weapons[0].OneHandDmg)
-				</a>
-			</th>
-			<th>
-				<a asp-page="./Index" asp-route-sortOrder="@Model.TwoHandDmgSort">
-					@Html.DisplayNameFor(model => model.Weapons[0].TwoHandDmg)
-				</a>
-			</th>
-			<th>
-				<a asp-page="./Index" asp-route-sortOrder="@Model.SpeedSort">
-					@Html.DisplayNameFor(model => model.Weapons[0].Speed)
-				</a>
-			</th>
-			<th></th>
-		</tr>
-	</thead>
-	<tbody>
-@foreach (var item in Model.Weapons) {
-		<tr>
-			<td>
-				@Html.DisplayFor(modelItem => item.Name)
-			</td>
-			<td>
-				@Html.DisplayFor(modelItem => item.Tier)
-			</td>
-			<td>
-				@Html.DisplayFor(modelItem => item.Type)
-			</td>
-			<td>
-				@Html.DisplayFor(modelItem => item.Sockets)
-			</td>
-			<td>
-				@Html.DisplayFor(modelItem => item.OneHandDmg)
-			</td>
-			<td>
-				@Html.DisplayFor(modelItem => item.TwoHandDmg)
-			</td>
-			<td>
-				@Html.DisplayFor(modelItem => item.Speed)
-			</td>
-			<td>
-				<a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-				<a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-				<a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
-			</td>
-		</tr>
-}
-	</tbody>
+    <thead>
+        <tr>
+            <th>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.NameSort">
+                    @Html.DisplayNameFor(model => model.Weapons[0].Name)
+                </a>
+            </th>
+            <th>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.TierSort">
+                    @Html.DisplayNameFor(model => model.Weapons[0].Tier)
+                </a>
+            </th>
+            <th>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.TypeSort">
+                    @Html.DisplayNameFor(model => model.Weapons[0].Type)
+                </a>
+            </th>
+            <th>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.SocketsSort">
+                    @Html.DisplayNameFor(model => model.Weapons[0].Sockets)
+                </a>
+            </th>
+            <th>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.OneHandDmgSort">
+                    @Html.DisplayNameFor(model => model.Weapons[0].OneHandDmg)
+                </a>
+            </th>
+            <th>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.TwoHandDmgSort">
+                    @Html.DisplayNameFor(model => model.Weapons[0].TwoHandDmg)
+                </a>
+            </th>
+            <th>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.SpeedSort">
+                    @Html.DisplayNameFor(model => model.Weapons[0].Speed)
+                </a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Weapons)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tier)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Sockets)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OneHandDmg)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TwoHandDmg)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Speed)
+                </td>
+                @*<td>
+            <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+            <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+            <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>*@
+            </tr>
+        }
+    </tbody>
 </table>

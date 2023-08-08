@@ -32,7 +32,7 @@ namespace D2RItems.Models.Weapons
 
 		public async Task OnGetAsync(string sortOrder)
 		{
-			if (_context.Weapon == null)
+			if (_context.Weapons == null)
 			{
 				return;
 			}
@@ -46,7 +46,7 @@ namespace D2RItems.Models.Weapons
 			TwoHandDmgSort = sortOrder == "TwoHandDmg" ? "two_desc" : "TwoHandDmg";
 			SpeedSort = sortOrder == "Speed" ? "speed_desc" : "Speed";
 
-			IQueryable<Weapon> weapons = from w in _context.Weapon
+			IQueryable<Weapon> weapons = from w in _context.Weapons
 										 select w;
 
 			switch (sortOrder) 

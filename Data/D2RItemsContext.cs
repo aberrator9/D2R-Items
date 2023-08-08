@@ -14,11 +14,13 @@ namespace D2RItems.Data
         {
         }
 
-        public DbSet<D2RItems.Models.Weapon> Weapon { get; set; } = default!;
+        public DbSet<D2RItems.Models.Weapon> Weapons { get; set; } = default!;
+        public DbSet<D2RItems.Models.Armor> Armors{ get; set; } = default!;
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 			modelBuilder.Entity<Weapon>().ToTable("Weapon");
-		}
+            modelBuilder.Entity<Weapon>().ToTable("Armor");
+        }
 	}
 }

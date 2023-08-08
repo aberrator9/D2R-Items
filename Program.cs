@@ -17,7 +17,6 @@ using (var scope = app.Services.CreateScope())
 {
 	var services = scope.ServiceProvider;
 
-	Debug.WriteLine("Before disposable service");
 	PopulateData.Initialize(services);
 }
 

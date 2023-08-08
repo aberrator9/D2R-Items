@@ -22,12 +22,12 @@ public class PopulateData
 			serviceProvider.GetRequiredService<
 				DbContextOptions<D2RItemsContext>>()))
 		{
-			if (context == null || context.Weapon == null)
+			if (context == null || context.Weapons == null)
 			{
 				throw new ArgumentNullException("Null D2RItemsContext");
 			}
 
-			if (context.Weapon.Any())
+			if (context.Weapons.Any())
 			{
 				return;
 			}
@@ -61,7 +61,7 @@ public class PopulateData
 					}
 
 
-					context.Weapon.Add(
+					context.Weapons.Add(
 						new Weapon()
 						{
 							Name = (string)item.Value["name"],
