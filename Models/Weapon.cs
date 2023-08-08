@@ -9,7 +9,9 @@ public class Weapon
     public string Tier { get; set; }
     public string Type { get; set; }
     public int Sockets { get; set; }
+    [Display(Name = "1H Dmg")]
     public int OneHandDmg { get; set; }
+    [Display(Name = "2H / Throw Dmg")]
     public int TwoHandDmg { get; set; }
     public int Speed { get; set; }
 

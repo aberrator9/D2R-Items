@@ -15,5 +15,10 @@ namespace D2RItems.Data
         }
 
         public DbSet<D2RItems.Models.Weapon> Weapon { get; set; } = default!;
-    }
+
+		protected override void OnModelCreating(ModelBuilder modelBuilder)
+		{
+			modelBuilder.Entity<Weapon>().ToTable("Weapon");
+		}
+	}
 }

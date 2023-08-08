@@ -20,7 +20,7 @@ namespace D2RItems.Models.Weapons
         }
 
         [BindProperty]
-      public Weapon Weapon { get; set; } = default!;
+        public Weapon Weapon { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {

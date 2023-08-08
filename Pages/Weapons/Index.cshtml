@@ -11,33 +11,45 @@
 	<thead>
 		<tr>
 			<th>
-				@Html.DisplayNameFor(model => model.Weapon[0].Name)
+				<a asp-page="./Index" asp-route-sortOrder="@Model.NameSort">
+					@Html.DisplayNameFor(model => model.Weapons[0].Name)
+				</a>
 			</th>
 			<th>
-				@Html.DisplayNameFor(model => model.Weapon[0].Tier)
+				<a asp-page="./Index" asp-route-sortOrder="@Model.TierSort">
+					@Html.DisplayNameFor(model => model.Weapons[0].Tier)
+				</a>
 			</th>
 			<th>
-				@Html.DisplayNameFor(model => model.Weapon[0].Type)
+				<a asp-page="./Index" asp-route-sortOrder="@Model.TypeSort">
+					@Html.DisplayNameFor(model => model.Weapons[0].Type)
+				</a>
 			</th>
 			<th>
-				@Html.DisplayNameFor(model => model.Weapon[0].Sockets)
+				<a asp-page="./Index" asp-route-sortOrder="@Model.SocketsSort">
+					@Html.DisplayNameFor(model => model.Weapons[0].Sockets)
+				</a>
 			</th>
 			<th>
-				@*@Html.DisplayNameFor(model => model.Weapon[0].OneHandDmg)*@
-				1H Dmg
+				<a asp-page="./Index" asp-route-sortOrder="@Model.OneHandDmgSort">
+					@Html.DisplayNameFor(model => model.Weapons[0].OneHandDmg)
+				</a>
 			</th>
 			<th>
-				@*@Html.DisplayNameFor(model => model.Weapon[0].TwoHandDmg)*@
-				2H / Throw Dmg
+				<a asp-page="./Index" asp-route-sortOrder="@Model.TwoHandDmgSort">
+					@Html.DisplayNameFor(model => model.Weapons[0].TwoHandDmg)
+				</a>
 			</th>
 			<th>
-				@Html.DisplayNameFor(model => model.Weapon[0].Speed)
+				<a asp-page="./Index" asp-route-sortOrder="@Model.SpeedSort">
+					@Html.DisplayNameFor(model => model.Weapons[0].Speed)
+				</a>
 			</th>
 			<th></th>
 		</tr>
 	</thead>
 	<tbody>
-@foreach (var item in Model.Weapon) {
+@foreach (var item in Model.Weapons) {
 		<tr>
 			<td>
 				@Html.DisplayFor(modelItem => item.Name)
@@ -60,11 +72,11 @@
 			<td>
 				@Html.DisplayFor(modelItem => item.Speed)
 			</td>
-			@*<td>
+			<td>
 				<a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
 				<a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
 				<a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
-			</td>*@
+			</td>
 		</tr>
 }
 	</tbody>

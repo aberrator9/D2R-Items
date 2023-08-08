@@ -18,8 +18,6 @@ public class PopulateData
 
 	public static void Initialize(IServiceProvider serviceProvider)
 	{
-		Debug.WriteLine("In initialize");
-
 		using (var context = new D2RItemsContext(
 			serviceProvider.GetRequiredService<
 				DbContextOptions<D2RItemsContext>>()))
@@ -38,13 +36,10 @@ public class PopulateData
 			using (StreamReader file = File.OpenText(@"c:\users\qbdth\repos\d2r-items\wwwroot\data\weapons.json"))
 			using (JsonTextReader reader = new JsonTextReader(file))
 			{
-				Debug.WriteLine("File was loaded" + file);
 				JObject weaponsJson = (JObject)JToken.ReadFrom(reader);
 
 				foreach (var item in weaponsJson)
 				{
-					Debug.WriteLine((string)item.Value["name"]);
-
 					int twoHandDmg = 0;
 					if (item.Value["2handmaxdam"] != null)
 					{
@@ -79,20 +74,6 @@ public class PopulateData
 						});
 				}
 			}
-
-			//context.Weapon.AddRange(
-
-			//    // Map each parameter to a new Weapon
-			//    new Weapon()
-			//    {
-			//        Name = "The Crungis",
-			//        Tier = "Elite",
-			//        Type = "Boulder",
-			//        Sockets = 5,
-			//        OneHandDmg = 15,
-			//        TwoHandDmg = 150
-			//    }
-			//    );
 			context.SaveChanges();
 		}
 	}
