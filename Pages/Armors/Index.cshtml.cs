@@ -45,8 +45,8 @@ namespace D2RItems.Pages.Armors
 			TierSort = sortOrder == "Tier" ? "tier_desc" : "Tier";
 			SocketsSort = sortOrder == "Sockets" ? "sockets_desc" : "Sockets";
 			ClassSort = sortOrder == "Class" ? "class_desc" : "Class";
-			WeightSort = sortOrder == "WeightSort" ? "weight_desc" : "WeightSort";
-			ReqStrSort = sortOrder == "ReqStr" ? "req_str_desc" : "Speed";
+			WeightSort = sortOrder == "Weight" ? "weight_desc" : "Weight";
+			ReqStrSort = sortOrder == "ReqStr" ? "req_str_desc" : "ReqStr";
 
 			IQueryable<Armor> armors = from w in _context.Armors
 										 select w;

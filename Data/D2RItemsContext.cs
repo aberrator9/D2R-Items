@@ -20,7 +20,7 @@ namespace D2RItems.Data
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 			modelBuilder.Entity<Weapon>().ToTable("Weapon");
-            modelBuilder.Entity<Weapon>().ToTable("Armor");
+            modelBuilder.Entity<Armor>().ToTable("Armor");
         }
 	}
 }

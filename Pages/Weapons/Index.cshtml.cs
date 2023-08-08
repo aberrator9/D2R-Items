@@ -49,51 +49,23 @@ namespace D2RItems.Models.Weapons
 			IQueryable<Weapon> weapons = from w in _context.Weapons
 										 select w;
 
-			switch (sortOrder) 
+			_ = sortOrder switch
 			{
-				case "name_desc":
-                    weapons = weapons.OrderByDescending(w => w.Name);
-                    break;
-				case "Type":
-					weapons = weapons.OrderBy(w => w.Type);
-					break;
-				case "type_desc":
-					weapons = weapons.OrderByDescending(w => w.Type);
-					break;
-				case "Tier":
-					weapons = weapons.OrderBy(w => w.Tier);
-					break;
-				case "tier_desc":
-					weapons = weapons.OrderByDescending(w => w.Tier);
-					break;
-				case "Sockets":
-					weapons = weapons.OrderBy(w => w.Sockets);
-					break;
-				case "sockets_desc":
-					weapons = weapons.OrderByDescending(w => w.Sockets);
-					break;
-				case "OneHandDmg":
-					weapons = weapons.OrderBy(w => w.OneHandDmg);
-					break;
-				case "one_desc":
-					weapons = weapons.OrderByDescending(w => w.OneHandDmg);
-					break;
-				case "TwoHandDmg":
-					weapons = weapons.OrderBy(w => w.TwoHandDmg);
-					break;
-				case "two_desc":
-					weapons = weapons.OrderByDescending(w => w.TwoHandDmg);
-					break;
-				case "Speed":
-					weapons = weapons.OrderBy(w => w.Speed);
-					break;
-				case "speed_desc":
-					weapons = weapons.OrderByDescending(w => w.Speed);
-					break;
-				default:
-                    weapons = weapons.OrderBy(w => w.Name);
-                    break;
-            }
+				"name_desc" => weapons = weapons.OrderByDescending(w => w.Name),
+				"Type" => weapons = weapons.OrderBy(w => w.Type),
+				"type_desc" => weapons = weapons.OrderByDescending(w => w.Type),
+				"Tier" => weapons = weapons.OrderBy(w => w.Tier),
+				"tier_desc" => weapons = weapons.OrderByDescending(w => w.Tier),
+				"Sockets" => weapons = weapons.OrderBy(w => w.Sockets),
+				"sockets_desc" => weapons = weapons.OrderByDescending(w => w.Sockets),
+				"OneHandDmg" => weapons = weapons.OrderBy(w => w.OneHandDmg),
+				"one_desc" => weapons = weapons.OrderByDescending(w => w.OneHandDmg),
+				"TwoHandDmg" => weapons = weapons.OrderBy(w => w.TwoHandDmg),
+				"two_desc" => weapons = weapons.OrderByDescending(w => w.TwoHandDmg),
+				"Speed" => weapons = weapons.OrderBy(w => w.Speed),
+				"speed_desc" => weapons = weapons.OrderByDescending(w => w.Speed),
+				_ => weapons = weapons.OrderBy(w => w.Name)
+			};
 
 			Weapons = await weapons.AsNoTracking().ToListAsync();
 		}
