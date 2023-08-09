@@ -2,86 +2,88 @@
 @model D2RItems.Pages.Armors.IndexModel
 
 @{
-	ViewData["Title"] = "Armor Bases";
+    ViewData["Title"] = "Armor Bases";
 }
 
 <h1>Armor Bases</h1>
 
 <p>
-	@*
-	<a asp-page="Create">Create New</a>
-	</p>*@
-	<table class="table">
-		<thead>
-			<tr>
-				<th>
-					<a asp-page="./Index" asp-route-sortOrder="@Model.NameSort">
-						@Html.DisplayNameFor(model => model.Armors[0].Name)
-					</a>
-				</th>
-				<th>
-					<a asp-page="./Index" asp-route-sortOrder="@Model.TierSort">
-						@Html.DisplayNameFor(model => model.Armors[0].Tier)
-					</a>
-				</th>
-				<th>
-					<a asp-page="./Index" asp-route-sortOrder="@Model.SlotSort">
-						@Html.DisplayNameFor(model => model.Armors[0].Slot)
-					</a>
-				</th>
-				<th>
-					<a asp-page="./Index" asp-route-sortOrder="@Model.SocketsSort">
-						@Html.DisplayNameFor(model => model.Armors[0].Sockets)
-					</a>
-				</th>
-				<th>
-					<a asp-page="./Index" asp-route-sortOrder="@Model.ClassSort">
-						@Html.DisplayNameFor(model => model.Armors[0].Class)
-					</a>
-				</th>
-				<th>
-					<a asp-page="./Index" asp-route-sortOrder="@Model.WeightSort">
-						@Html.DisplayNameFor(model => model.Armors[0].Weight)
-					</a>
-				</th>
-				<th>
-					<a asp-page="./Index" asp-route-sortOrder="@Model.ReqStrSort">
-						@Html.DisplayNameFor(model => model.Armors[0].ReqStr)
-					</a>
-				</th>
-			</tr>
-		</thead>
-		<tbody>
-			@foreach (var item in Model.Armors)
-			{
-				<tr>
-					<td>
-						@Html.DisplayFor(modelItem => item.Name)
-					</td>
-					<td>
-						@Html.DisplayFor(modelItem => item.Tier)
-					</td>
-					<td>
-						@Html.DisplayFor(modelItem => item.Slot)
-					</td>
-					<td>
-						@Html.DisplayFor(modelItem => item.Sockets)
-					</td>
-					<td>
-						@Html.DisplayFor(modelItem => item.Class)
-					</td>
-					<td>
-						@Html.DisplayFor(modelItem => item.Weight)
-					</td>
-					<td>
-						@Html.DisplayFor(modelItem => item.ReqStr)
-					</td>
-					@*<td>
-				<a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-				<a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-				<a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
-				</td>*@
-				</tr>
-			}
-		</tbody>
-	</table>
+    @*
+    <a asp-page="Create">Create New</a>
+    </p>*@
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    <a asp-page="./Index" asp-route-sortOrder="@Model.NameSort">
+                        @Html.DisplayNameFor(model => model.Armors[0].Name)
+                    </a>
+                </th>
+                <th>
+                    <a asp-page="./Index" asp-route-sortOrder="@Model.TierSort">
+                        @Html.DisplayNameFor(model => model.Armors[0].Tier)
+                    </a>
+                </th>
+                <th>
+                    <a asp-page="./Index" asp-route-sortOrder="@Model.SlotSort">
+                        @Html.DisplayNameFor(model => model.Armors[0].Slot)
+                    </a>
+                </th>
+                <th>
+                    <a asp-page="./Index" asp-route-sortOrder="@Model.SocketsSort">
+                        @Html.DisplayNameFor(model => model.Armors[0].Sockets)
+                    </a>
+                </th>
+                <th>
+                    <a asp-page="./Index" asp-route-sortOrder="@Model.ClassSort">
+                        @Html.DisplayNameFor(model => model.Armors[0].Class)
+                    </a>
+                </th>
+                <th>
+                    <a asp-page="./Index" asp-route-sortOrder="@Model.WeightSort">
+                        @Html.DisplayNameFor(model => model.Armors[0].Weight)
+                    </a>
+                </th>
+                <th>
+                    <a asp-page="./Index" asp-route-sortOrder="@Model.ReqStrSort">
+                        @Html.DisplayNameFor(model => model.Armors[0].ReqStr)
+                    </a>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Armors)
+            {
+                <tr>
+                    <td>
+                        <a asp-page="./Details" asp-route-id="@item.Id" id="name-col-item">
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </a>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Tier)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Slot)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Sockets)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Class)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Weight)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ReqStr)
+                    </td>
+                    @*<td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                </td>*@
+                </tr>
+            }
+        </tbody>
+    </table>

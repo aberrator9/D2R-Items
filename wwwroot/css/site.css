@@ -32,10 +32,12 @@ html {
     background: grey;
     border-style: solid;
     border-width: 2rem 2rem 6rem 2rem;
-    border-image-slice: 50%;
     border-image: url(../img/border1.png) 18% 18% 50% 18% repeat;
     background: url(../img/concrete-bg.webp), #252525;
     background-blend-mode: multiply;
+}
+
+hr{
 }
 
 body {
@@ -44,7 +46,7 @@ body {
     background: transparent;
 }
 
-p, h1, h2, h3, h4, h5, gi, table, th, tr {
+p, h1, h2, h3, h4, h5, gi, table, th, tr, label, dl {
     color: #e5e5e5;
 }
 
@@ -60,4 +62,8 @@ a:hover{
 
 #name-col-item{
     color: palegoldenrod;
+}
+
+#name-col-item:hover{
+    color:goldenrod
 }
