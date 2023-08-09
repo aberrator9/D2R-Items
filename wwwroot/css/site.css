@@ -1,3 +1,7 @@
+root{
+    var(--color)
+}
+
 html {
   font-size: 14px;
 }
@@ -14,7 +18,7 @@ html {
 
 @media (min-width: 768px) {
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -23,11 +27,37 @@ html {
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
+    background: grey;
+    border-style: solid;
+    border-width: 2rem 2rem 6rem 2rem;
+    border-image-slice: 50%;
+    border-image: url(../img/border1.png) 18% 18% 50% 18% repeat;
+    background: url(../img/concrete-bg.webp), #252525;
+    background-blend-mode: multiply;
 }
 
 body {
     margin-bottom: 60px;
     font-family: AvQuest;
+    background: transparent;
+}
+
+p, h1, h2, h3, h4, h5, gi, table, th, tr {
+    color: #e5e5e5;
+}
+
+a{
+    font-size: 1rem;
+    color : #cacaca;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #c12d2d;
+}
+
+#name-col-item{
+    color: palegoldenrod;
 }

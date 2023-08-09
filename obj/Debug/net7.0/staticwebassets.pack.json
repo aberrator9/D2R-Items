@@ -45,6 +45,14 @@
       "PackagePath": "staticwebassets\\font\\Diabolica-VRBB.ttf"
     },
     {
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\img\\crystal-sword.png",
+      "PackagePath": "staticwebassets\\img\\crystal-sword.png"
+    },
+    {
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\img\\light-plate.png",
+      "PackagePath": "staticwebassets\\img\\light-plate.png"
+    },
+    {
       "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
