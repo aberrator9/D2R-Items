@@ -1,9 +1,9 @@
-root{
+root {
     var(--color)
 }
 
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @font-face {
@@ -13,17 +13,17 @@ html {
 
 @font-face {
     font-family: Diabolica;
-    src:url(../font/Diabolica-VRBB.ttf)
+    src: url(../font/Diabolica-VRBB.ttf)
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 18px;
-  }
+    html {
+        font-size: 18px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
@@ -37,9 +37,6 @@ html {
     background-blend-mode: multiply;
 }
 
-hr{
-}
-
 body {
     margin-bottom: 60px;
     font-family: AvQuest;
@@ -50,20 +47,36 @@ p, h1, h2, h3, h4, h5, gi, table, th, tr, label, dl {
     color: #e5e5e5;
 }
 
-a{
+    .header-centered {
+        text-align: center;
+    }
+
+    .data-centered {
+        text-align: center;
+    }
+
+a {
     font-size: 1rem;
-    color : #cacaca;
+    color: #c85e5e;
     text-decoration: none;
 }
 
-a:hover{
-    color: #c12d2d;
-}
+    a:hover {
+        color: #c12d2d;
+    }
 
-#name-col-item{
+#name-col-item {
     color: palegoldenrod;
 }
 
-#name-col-item:hover{
-    color:goldenrod
+    #name-col-item:hover {
+        color: goldenrod
+    }
+
+tbody tr:hover, .navbar .nav-link:hover, .navbar-brand:hover {
+    background-color: rgb(69, 69, 69, 0.3);
+}
+
+nav div ul li {
+    color:whitesmoke;
 }

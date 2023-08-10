@@ -45,12 +45,28 @@
       "PackagePath": "staticwebassets\\font\\Diabolica-VRBB.ttf"
     },
     {
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\img\\border1.png",
+      "PackagePath": "staticwebassets\\img\\border1.png"
+    },
+    {
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\img\\concrete-bg.webp",
+      "PackagePath": "staticwebassets\\img\\concrete-bg.webp"
+    },
+    {
       "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\img\\crystal-sword.png",
       "PackagePath": "staticwebassets\\img\\crystal-sword.png"
     },
     {
       "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\img\\light-plate.png",
       "PackagePath": "staticwebassets\\img\\light-plate.png"
+    },
+    {
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\img\\tick-off.png",
+      "PackagePath": "staticwebassets\\img\\tick-off.png"
+    },
+    {
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\img\\tick-on.png",
+      "PackagePath": "staticwebassets\\img\\tick-on.png"
     },
     {
       "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\js\\site.js",

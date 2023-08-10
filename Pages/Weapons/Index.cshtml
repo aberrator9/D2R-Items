@@ -5,22 +5,22 @@
     ViewData["Title"] = "Weapon Bases";
 }
 
-<h1>Weapon Bases</h1>
+<h1 class="text-center">Weapon Bases</h1>
 
-<table class="table">
+<table class="table table-border" style="border-color:rgb(69, 69, 69, 0.4);">
     <thead>
         <tr>
-            <th>
+            <th class="text-center">
                 <a asp-page="./Index" asp-route-sortOrder="@Model.NameSort">
                     @Html.DisplayNameFor(model => model.Weapons[0].Name)
                 </a>
             </th>
-            <th>
+            <th class="text-center">
                 <a asp-page="./Index" asp-route-sortOrder="@Model.TierSort">
                     @Html.DisplayNameFor(model => model.Weapons[0].Tier)
                 </a>
             </th>
-            <th>
+            <th class="text-center">
                 <a asp-page="./Index" asp-route-sortOrder="@Model.TypeSort">
                     @Html.DisplayNameFor(model => model.Weapons[0].Type)
                 </a>
@@ -62,16 +62,16 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Type)
                 </td>
-                <td>
+                <td class="text-center">
                     @Html.DisplayFor(modelItem => item.Sockets)
                 </td>
-                <td>
+                <td class="text-center">
                     @Html.DisplayFor(modelItem => item.OneHandDmg)
                 </td>
-                <td>
+                <td class="text-center">
                     @Html.DisplayFor(modelItem => item.TwoHandDmg)
                 </td>
-                <td>
+                <td class="text-center">
                     @Html.DisplayFor(modelItem => item.Speed)
                 </td>
                 @*<td>
