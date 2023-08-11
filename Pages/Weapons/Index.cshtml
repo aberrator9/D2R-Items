@@ -5,10 +5,10 @@
     ViewData["Title"] = "Weapon Bases";
 }
 
-<h1 class="text-center">Weapon Bases</h1>
+<h1 class="text-center">@ViewData["Title"]</h1>
 
 <table class="table table-border" style="border-color:rgb(69, 69, 69, 0.4);">
-    <thead>
+    <thead class="sticky-top">
         <tr>
             <th class="text-center">
                 <a asp-page="./Index" asp-route-sortOrder="@Model.NameSort">

@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using D2RItems.Data;
 using D2RItems.Models;
 using System.Diagnostics;
+using System.IO.IsolatedStorage;
 
 namespace D2RItems.Pages.Armors
 {
@@ -28,10 +29,11 @@ namespace D2RItems.Pages.Armors
 		public string WeightSort { get; set; }
 		public string ReqStrSort { get; set; }
 		public string CurrentSort { get; set; }
+		public string CurrentFilter { get; set; }
 
 		public IList<Armor> Armors { get; set; } = default!;
 
-		public async Task OnGetAsync(string sortOrder)
+		public async Task OnGetAsync(string sortOrder, string searchString)
 		{
 			if (_context.Armors == null)
 			{
@@ -48,8 +50,15 @@ namespace D2RItems.Pages.Armors
 			WeightSort = sortOrder == "Weight" ? "weight_desc" : "Weight";
 			ReqStrSort = sortOrder == "ReqStr" ? "req_str_desc" : "ReqStr";
 
-			IQueryable<Armor> armors = from w in _context.Armors
-										 select w;
+            CurrentFilter = searchString;
+
+			IQueryable<Armor> armors = from a in _context.Armors
+										 select a;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                armors = armors.Where(a => a.Name.Contains(searchString));
+            }
 
 			switch (sortOrder)
 			{

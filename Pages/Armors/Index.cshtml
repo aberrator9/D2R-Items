@@ -5,11 +5,42 @@
     ViewData["Title"] = "Armor Bases";
 }
 
-<h1 class="text-center">Armor Bases</h1>
+
+<div class="container d-inline-flex">
+    <div>
+        <h1 class="text-center d-inline-flex">@ViewData["Title"]</h1>
+        <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+            >>
+        </button>
+    </div>
+    <div style="min-height: 80px;">
+        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="flex-lg-fill">
+                <div class="form-check">
+                    <input class="custom-check" type="checkbox" value="">
+                    <label>
+                        Default checkbox
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<form asp-page="./Index" method="get" class="text-center">
+<div class="form-actions no-color">
+    <p>
+        Search name:
+        <input class="searchbox" type="text" name="SearchString" value="@Model.CurrentFilter" />
+        <input type="submit" value="Search" class="bt btn-dark" />
+        <a asp-page="./Index">Clear</a>
+    </p>
+</div>    
+</form>
 
 <table class="table table-border" style="border-color:rgb(69, 69, 69, 0.4);">
-    <thead>
-        <tr>
+    <thead class="sticky-top">
+        <tr class="border-thin">
             <th class="text-center">
                 <a asp-page="./Index" asp-route-sortOrder="@Model.NameSort">
                     @Html.DisplayNameFor(model => model.Armors[0].Name)
