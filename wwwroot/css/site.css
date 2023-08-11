@@ -96,21 +96,34 @@ nav div ul li {
 
 .custom-check {
     display:inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
     height: 25px;
     width: 25px;
+    opacity:80%;
+}
+
+    .custom-check:hover {
+        opacity: 100%;
+    }
+
+    .custom-check:focus{
+    background:url(../img/tick-on.png)
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
     background:url(../img/tick-off.png);
 }
 
-.form-check input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
 
 .btn-img {
     opacity: 70%;
