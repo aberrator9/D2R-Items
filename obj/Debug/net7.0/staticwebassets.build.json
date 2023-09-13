@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Xnaf8fgs6xbyR6whVsyWpUMlng36FhGCDg838K/rGDU=",
+  "Hash": "qPUnmV3nkEXsRuwjiTQ2nCW+ivbyv0bg5T8TIaDOlds=",
   "Source": "D2RItems",
   "BasePath": "_content/D2RItems",
   "Mode": "Default",
@@ -151,23 +151,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\data\\weapons.json"
-    },
-    {
-      "Identity": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\data\\weapons.sql",
-      "SourceId": "D2RItems",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\",
-      "BasePath": "_content/D2RItems",
-      "RelativePath": "data/weapons.sql",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\data\\weapons.sql"
     },
     {
       "Identity": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\favicon.ico",

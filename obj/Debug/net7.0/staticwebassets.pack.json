@@ -29,10 +29,6 @@
       "PackagePath": "staticwebassets\\data\\weapons.json"
     },
     {
-      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\data\\weapons.sql",
-      "PackagePath": "staticwebassets\\data\\weapons.sql"
-    },
-    {
       "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
