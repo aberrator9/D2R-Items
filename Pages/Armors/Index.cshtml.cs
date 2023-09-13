@@ -80,15 +80,11 @@ namespace D2RItems.Pages.Armors
 				{
 					if (searchString.StartsWith("*"))
 					{
-						armors = from a in _context.Armors
-								 where a.Name.EndsWith(searchString.Substring(1, searchString.Length - 1))
-								 select a;
-					}
+                        armors = _context.Armors.Where(a => a.Name.EndsWith(searchString.Substring(1, searchString.Length - 1)));
+                    }
 					else if (searchString.EndsWith("*"))
 					{
-						armors = from a in _context.Armors
-								 where a.Name.StartsWith(searchString.Substring(0, searchString.Length - 1))
-								 select a;
+                        armors = _context.Armors.Where(a => a.Name.StartsWith(searchString.Substring(0, searchString.Length - 1)));
 					}
 				}
 				else
@@ -120,10 +116,10 @@ namespace D2RItems.Pages.Armors
 					armors = armors.OrderByDescending(a => a.Tier);
 					break;
 				case "Sockets":
-					armors = armors.OrderBy(a => a.Sockets);
+					armors = armors.OrderByDescending(a => a.Sockets);
 					break;
 				case "sockets_desc":
-					armors = armors.OrderByDescending(a => a.Sockets);
+					armors = armors.OrderBy(a => a.Sockets);
 					break;
 				case "Weight":
 					armors = armors.OrderBy(a => a.Weight);
@@ -138,10 +134,10 @@ namespace D2RItems.Pages.Armors
 					armors = armors.OrderByDescending(w => w.ReqStr);
 					break;
 				case "Class":
-					armors = armors.OrderBy(w => w.Class);
+					armors = armors.OrderByDescending(w => w.Class);
 					break;
 				case "class_desc":
-					armors = armors.OrderByDescending(w => w.Class);
+					armors = armors.OrderBy(w => w.Class);
 					break;
 				default:
 					armors = armors.OrderBy(w => w.Name);
