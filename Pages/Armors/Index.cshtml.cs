@@ -34,7 +34,7 @@ namespace D2RItems.Pages.Armors
 		public string CurrentFilter { get; set; }
 
 		[BindProperty]
-		public string SelectedClass { get; set; }
+        public string SelectedClass { get; set; }
 		public SelectList ClassSelectList { get; set; }
 		private readonly string[] classes ={
 			//"Amazon",
@@ -46,9 +46,12 @@ namespace D2RItems.Pages.Armors
 			//"Sorceress",
 			};
 
+		[BindProperty]
+        public bool ExcludeClassSpecificItems { get; set; }
+
 		public IList<Armor> Armors { get; set; } = default!;
 
-		public async Task OnGetAsync(string sortOrder, string searchString, string selectedClass)
+		public async Task OnGetAsync(string sortOrder, string searchString, string selectedClass, bool excludeClassSpecificItems)
 		{
 			if (_context.Armors == null)
 			{
@@ -56,9 +59,11 @@ namespace D2RItems.Pages.Armors
 				return;
 			}
 
+			IQueryable<Armor> armors = _context.Armors.Select(a => a);
+
 			ClassSelectList = new SelectList(classes.ToList());
             SelectedClass = selectedClass;
-			Debug.WriteLine("Selected class is " + SelectedClass);
+            ExcludeClassSpecificItems = excludeClassSpecificItems;
 
 			CurrentSort = sortOrder;
 			NameSort = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
@@ -71,20 +76,17 @@ namespace D2RItems.Pages.Armors
 
 			CurrentFilter = searchString;
 
-			IQueryable<Armor> armors = from a in _context.Armors
-									   select a;
-
 			if (!String.IsNullOrEmpty(searchString))
 			{
 				if (searchString.Contains("*"))
 				{
 					if (searchString.StartsWith("*"))
 					{
-                        armors = _context.Armors.Where(a => a.Name.EndsWith(searchString.Substring(1, searchString.Length - 1)));
+                        armors = armors.Where(a => a.Name.EndsWith(searchString.Substring(1, searchString.Length - 1)));
                     }
 					else if (searchString.EndsWith("*"))
 					{
-                        armors = _context.Armors.Where(a => a.Name.StartsWith(searchString.Substring(0, searchString.Length - 1)));
+                        armors = armors.Where(a => a.Name.StartsWith(searchString.Substring(0, searchString.Length - 1)));
 					}
 				}
 				else
@@ -93,12 +95,23 @@ namespace D2RItems.Pages.Armors
 				}
 			}
 
-			if(!String.IsNullOrEmpty(SelectedClass))
+			if(!string.IsNullOrEmpty(SelectedClass))
 			{
-			    armors = armors.Where(a=>a.Slot.Contains(SelectedClass));
+			    armors = armors.Where(a => a.Slot.Contains(SelectedClass));
 			}
 
-			switch (sortOrder)
+            if (ExcludeClassSpecificItems)
+            {
+                // Workaround, since the EF Core flavor of Linq doesn't seem to support Contains inside nested query
+                // And class list will never change size
+                armors = armors.Where(a =>
+                    !a.Slot.Contains("Barbarian") &&
+                    !a.Slot.Contains("Druid") &&
+                    !a.Slot.Contains("Necro") &&
+                    !a.Slot.Contains("Paladin"));
+            }
+
+            switch (sortOrder)
 			{
 				case "name_desc":
 					armors = armors.OrderByDescending(a => a.Name);

@@ -5,7 +5,7 @@
 	ViewData["Title"] = "Armor Bases";
 }
 
-<h1 class="text-center d-inline-flex">@ViewData["Title"]</h1>
+<h1 class="text-center d-inline-flex" style="position:absolute">@ViewData["Title"]</h1>
 
 <form asp-page="./Index" method="get" class="text-center">
 <div class="form-actions no-color">
@@ -16,35 +16,19 @@
 		<a asp-page="./Index">Clear</a>
 	</p>
 
-	<div class="container" style="display:inline-flex">
-		<div class="form-check">
-			<div class="custom-check d-inline">
-				<input type="checkbox" value="">
-			</div>
-			<label>
-				Default checkbox
-			</label>
-		</div>
-		<div class="form-check">
-			<div class="custom-check d-inline">
-				<input type="checkbox" value="">
-			</div>
-			<label>
-				Default checkbox
-			</label>
-		</div>
-		<div class="form-check">
-			<div class="custom-check d-inline">
-				<input type="checkbox" value="">
-			</div>
-			<label>
-				Default checkbox
-			</label>
-		</div>
-		</div>
+	<div class="filters">
 	<select asp-for="SelectedClass" asp-items="@Model.ClassSelectList" onchange="this.form.submit()" class="bg-dark">
 		<option value="">All classes</option>
 	</select>
+		<div class="form-check">
+			<div class="custom-check">
+				<input type="checkbox" asp-for="ExcludeClassSpecificItems" onchange="this.form.submit()">
+			</div>
+			<label>
+				Exclude class-specific items
+			</label>
+		</div>
+	</div>
 </div>    
 </form>
 

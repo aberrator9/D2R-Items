@@ -22,6 +22,10 @@ html {
     box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
+.form-check {
+   display:inline-flex;
+}
+
 html {
     position: relative;
     min-height: 100%;
@@ -95,11 +99,11 @@ nav div ul li {
 }
 
 input[type="checkbox"] {
-    opacity:80%;
+    opacity: 80%;
     appearance: none;
     -webkit-appearance: none;
     background-color: #fff;
-    margin: 0;
+    margin: 0 0.5rem;
     font: inherit;
     color: currentColor;
     width: 1.15em;
@@ -107,8 +111,8 @@ input[type="checkbox"] {
     border: 0.15em solid currentColor;
     border-radius: 0.15em;
     transform: translateY(-0.075em);
-    background:url(../img/tick-off.png);
-    background-size:cover;
+    background: url(../img/tick-off.png);
+    background-size: cover;
 }
 
     input[type="checkbox"]:hover {
@@ -117,9 +121,8 @@ input[type="checkbox"] {
 
     input[type="checkbox"]:checked {
         background: url(../img/tick-on.png);
-        background-size:cover;
+        background-size: cover;
     } 
-
 
 .btn-img {
     opacity: 70%;
@@ -138,4 +141,10 @@ form input, select {
     color: palegoldenrod;
     background: linear-gradient(rgba(75, 75, 75, 0.6), rgba(36, 36, 36,0.6));
     border: none;
+}
+
+.filters{
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
