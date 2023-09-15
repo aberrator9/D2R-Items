@@ -34,9 +34,9 @@ namespace D2RItems.Pages.Armors
 		public string CurrentFilter { get; set; }
 
 		[BindProperty]
-        public string SelectedClass { get; set; }
-		public SelectList ClassSelectList { get; set; }
-		private readonly string[] classes ={
+        public string SelectedCharacterClass { get; set; }
+        public SelectList ClassSelectList { get; set; }
+		private readonly string[] characterClasses ={
 			//"Amazon",
 			//"Assassin",
 			"Barbarian",
@@ -51,7 +51,7 @@ namespace D2RItems.Pages.Armors
 
 		public IList<Armor> Armors { get; set; } = default!;
 
-		public async Task OnGetAsync(string sortOrder, string searchString, string selectedClass, bool excludeClassSpecificItems)
+		public async Task OnGetAsync(string sortOrder, string searchString, string selectedCharacterClass, bool excludeClassSpecificItems)
 		{
 			if (_context.Armors == null)
 			{
@@ -61,8 +61,8 @@ namespace D2RItems.Pages.Armors
 
 			IQueryable<Armor> armors = _context.Armors.Select(a => a);
 
-			ClassSelectList = new SelectList(classes.ToList());
-            SelectedClass = selectedClass;
+			ClassSelectList = new SelectList(characterClasses.ToList());
+            SelectedCharacterClass = selectedCharacterClass;
             ExcludeClassSpecificItems = excludeClassSpecificItems;
 
 			CurrentSort = sortOrder;
@@ -95,9 +95,9 @@ namespace D2RItems.Pages.Armors
 				}
 			}
 
-			if(!string.IsNullOrEmpty(SelectedClass))
+			if(!string.IsNullOrEmpty(SelectedCharacterClass))
 			{
-			    armors = armors.Where(a => a.Slot.Contains(SelectedClass));
+			    armors = armors.Where(a => a.Slot.Contains(SelectedCharacterClass));
 			}
 
             if (ExcludeClassSpecificItems)

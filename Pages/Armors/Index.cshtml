@@ -2,109 +2,141 @@
 @model D2RItems.Pages.Armors.IndexModel
 
 @{
-	ViewData["Title"] = "Armor Bases";
+    ViewData["Title"] = "Armor Bases";
 }
 
-<h1 class="text-center d-inline-flex" style="position:absolute">@ViewData["Title"]</h1>
+<div class="d-inline-flex p-4 m-4 mt-0">
 
-<form asp-page="./Index" method="get" class="text-center">
-<div class="form-actions no-color">
-	<p>
-		Search name:
-		<input class="searchbox" type="text" name="SearchString" value="@Model.CurrentFilter" />
-		<input type="submit" value="Search" class="btn-dark" />
-		<a asp-page="./Index">Clear</a>
-	</p>
+    <h1 class="m-3">@ViewData["Title"]</h1>
 
-	<div class="filters">
-	<select asp-for="SelectedClass" asp-items="@Model.ClassSelectList" onchange="this.form.submit()" class="bg-dark">
-		<option value="">All classes</option>
-	</select>
-		<div class="form-check">
-			<div class="custom-check">
-				<input type="checkbox" asp-for="ExcludeClassSpecificItems" onchange="this.form.submit()">
-			</div>
-			<label>
-				Exclude class-specific items
-			</label>
-		</div>
-	</div>
-</div>    
-</form>
+    <form asp-page="./Index" method="get" class="text-center ms-5">
+        <p class="text-lg-start mb-0">
+            Search name:
+        </p>
+        <p>
+            <input class="searchbox gradient-bg-dark border-thin" type="text" name="SearchString" value="@Model.CurrentFilter" />
+            <input type="submit" value="Search" class="btn-dark" />
+            <a asp-page="./Index">Clear</a>
+        </p>
+
+        <div class="input-group no-color">
+            <select asp-for="SelectedCharacterClass" asp-items="@Model.ClassSelectList" onchange="this.form.submit()" class="gradient-bg-light">
+                <option value="">All classes</option>
+            </select>
+            <div class="form-check m-0 align-content">
+                <div class="custom-check">
+                    <input type="checkbox" asp-for="ExcludeClassSpecificItems" onchange="this.form.submit()">
+                </div>
+                <label>
+                    Exclude class-specific
+                </label>
+            </div>
+
+        </div>
+    </form>
+</div>
 
 <table class="table table-border" style="border-color:rgb(69, 69, 69, 0.4);">
-	<thead class="sticky-top">
-		<tr class="border-thin">
-			<th class="text-center">
-				<a asp-page="./Index" asp-route-sortOrder="@Model.NameSort">
-					@Html.DisplayNameFor(model => model.Armors[0].Name)
-				</a>
-			</th>
-			<th class="text-center">
-				<a asp-page="./Index" asp-route-sortOrder="@Model.TierSort">
-					@Html.DisplayNameFor(model => model.Armors[0].Tier)
-				</a>
-			</th>
-			<th class="text-center">
-				<a asp-page="./Index" asp-route-sortOrder="@Model.SlotSort">
-					@Html.DisplayNameFor(model => model.Armors[0].Slot)
-				</a>
-			</th>
-			<th>
-				<a asp-page="./Index" asp-route-sortOrder="@Model.SocketsSort">
-					@Html.DisplayNameFor(model => model.Armors[0].Sockets)
-				</a>
-			</th>
-			<th>
-				<a asp-page="./Index" asp-route-sortOrder="@Model.ClassSort">
-					@Html.DisplayNameFor(model => model.Armors[0].Class)
-				</a>
-			</th>
-			<th>
-				<a asp-page="./Index" asp-route-sortOrder="@Model.WeightSort">
-					@Html.DisplayNameFor(model => model.Armors[0].Weight)
-				</a>
-			</th>
-			<th>
-				<a asp-page="./Index" asp-route-sortOrder="@Model.ReqStrSort">
-					@Html.DisplayNameFor(model => model.Armors[0].ReqStr)
-				</a>
-			</th>
-		</tr>
-	</thead>
-	<tbody>
-		@foreach (var item in Model.Armors)
-		{
-			<tr>
-				<td>
-					<a asp-page="./Details" asp-route-id="@item.Id" id="name-col-item">
-						@Html.DisplayFor(modelItem => item.Name)
-					</a>
-				</td>
-				<td>
-					@Html.DisplayFor(modelItem => item.Tier)
-				</td>
-				<td>
-					@Html.DisplayFor(modelItem => item.Slot)
-				</td>
-				<td class="text-center">
-					@Html.DisplayFor(modelItem => item.Sockets)
-				</td>
-				<td class="text-center">
-					@Html.DisplayFor(modelItem => item.Class)
-				</td>
-				<td>
-					@Html.DisplayFor(modelItem => item.Weight)
-				</td>
-				<td class="text-center">
-					@Html.DisplayFor(modelItem => item.ReqStr)
-				</td>
-				@*<td>
-			<a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-			<a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-			<a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
-			</td>*@
-			</tr>
-		}
-	</tbody>
+    <thead>
+        <tr class="gradient-bg-light">
+            <th class="text-center">
+                <a asp-page="./Index"
+                   asp-route-searchString="@Model.CurrentFilter"
+                   asp-route-selectedCharacterClass="@Model.SelectedCharacterClass"
+                   asp-route-excludeClassSpecificItems="@Model.ExcludeClassSpecificItems"
+                   asp-route-sortOrder="@Model.NameSort">
+                    @Html.DisplayNameFor(model => model.Armors[0].Name)
+                </a>
+            </th>
+            <th class="text-center">
+                <a asp-page="./Index"
+                   asp-route-searchString="@Model.CurrentFilter"
+                   asp-route-selectedCharacterClass="@Model.SelectedCharacterClass"
+                   asp-route-excludeClassSpecificItems="@Model.ExcludeClassSpecificItems"
+                   asp-route-sortOrder="@Model.TierSort">
+                    @Html.DisplayNameFor(model => model.Armors[0].Tier)
+                </a>
+            </th>
+            <th class="text-center">
+                <a asp-page="./Index"
+                   asp-route-searchString="@Model.CurrentFilter"
+                   asp-route-selectedCharacterClass="@Model.SelectedCharacterClass"
+                   asp-route-excludeClassSpecificItems="@Model.ExcludeClassSpecificItems"
+                   asp-route-sortOrder="@Model.SlotSort">
+                    @Html.DisplayNameFor(model => model.Armors[0].Slot)
+                </a>
+            </th>
+            <th>
+                <a asp-page="./Index"
+                   asp-route-searchString="@Model.CurrentFilter"
+                   asp-route-selectedCharacterClass="@Model.SelectedCharacterClass"
+                   asp-route-excludeClassSpecificItems="@Model.ExcludeClassSpecificItems"
+                   asp-route-sortOrder="@Model.SocketsSort">
+                    @Html.DisplayNameFor(model => model.Armors[0].Sockets)
+                </a>
+            </th>
+            <th>
+                <a asp-page="./Index"
+                   asp-route-searchString="@Model.CurrentFilter"
+                   asp-route-selectedCharacterClass="@Model.SelectedCharacterClass"
+                   asp-route-excludeClassSpecificItems="@Model.ExcludeClassSpecificItems"
+                   asp-route-sortOrder="@Model.ClassSort">
+                    @Html.DisplayNameFor(model => model.Armors[0].Class)
+                </a>
+            </th>
+            <th>
+                <a asp-page="./Index"
+                   asp-route-searchString="@Model.CurrentFilter"
+                   asp-route-selectedCharacterClass="@Model.SelectedCharacterClass"
+                   asp-route-excludeClassSpecificItems="@Model.ExcludeClassSpecificItems"
+                   asp-route-sortOrder="@Model.WeightSort">
+                    @Html.DisplayNameFor(model => model.Armors[0].Weight)
+                </a>
+            </th>
+            <th>
+                <a asp-page="./Index"
+                   asp-route-searchString="@Model.CurrentFilter"
+                   asp-route-selectedCharacterClass="@Model.SelectedCharacterClass"
+                   asp-route-excludeClassSpecificItems="@Model.ExcludeClassSpecificItems"
+                   asp-route-sortOrder="@Model.ReqStrSort">
+                    @Html.DisplayNameFor(model => model.Armors[0].ReqStr)
+                </a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Armors)
+        {
+            <tr>
+                <td>
+                    <a asp-page="./Details" asp-route-id="@item.Id" id="name-col-item">
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </a>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tier)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Slot)
+                </td>
+                <td class="text-center">
+                    @Html.DisplayFor(modelItem => item.Sockets)
+                </td>
+                <td class="text-center">
+                    @Html.DisplayFor(modelItem => item.Class)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Weight)
+                </td>
+                <td class="text-center">
+                    @Html.DisplayFor(modelItem => item.ReqStr)
+                </td>
+                @*<td>
+            <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+            <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+            <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>*@
+            </tr>
+        }
+    </tbody>
 </table>

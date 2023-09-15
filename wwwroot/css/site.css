@@ -23,7 +23,7 @@ html {
 }
 
 .form-check {
-   display:inline-flex;
+    display: inline-flex;
 }
 
 html {
@@ -47,12 +47,8 @@ p, h1, h2, h3, h4, h5, gi, table, th, tr, label, dl {
     color: #e5e5e5;
 }
 
-.header-centered {
-    text-align: center;
-}
-
-.data-centered {
-    text-align: center;
+th {
+    border-bottom:0;
 }
 
 a {
@@ -94,21 +90,23 @@ nav div ul li {
     border-image: url(../img/border1.png) 18% 18% 50% 18% repeat;
 }
 
-.sticky-top {
-    background: rgb(22, 22, 22, 0.9);
+.gradient-bg-dark {
+    background: linear-gradient(rgba(25, 25, 25, 0.5), rgba(36, 36, 36,0.5));
+}
+
+.gradient-bg-light{
+    background: linear-gradient(rgba(75, 75, 75, 0.4), rgba(25, 25, 25,0.4));
 }
 
 input[type="checkbox"] {
     opacity: 80%;
     appearance: none;
     -webkit-appearance: none;
-    background-color: #fff;
     margin: 0 0.5rem;
     font: inherit;
-    color: currentColor;
-    width: 1.15em;
-    height: 1.15em;
-    border: 0.15em solid currentColor;
+    width: 1.4rem;
+    height: 1.4rem;
+    border: none;
     border-radius: 0.15em;
     transform: translateY(-0.075em);
     background: url(../img/tick-off.png);
@@ -116,13 +114,13 @@ input[type="checkbox"] {
 }
 
     input[type="checkbox"]:hover {
-        opacity:100%;
+        opacity: 100%;
     }
 
     input[type="checkbox"]:checked {
         background: url(../img/tick-on.png);
         background-size: cover;
-    } 
+    }
 
 .btn-img {
     opacity: 70%;
@@ -133,18 +131,16 @@ input[type="checkbox"] {
         opacity: 100%;
     }
 
-    .btn-img:active{
-        transform:scale(95%);
+    .btn-img:active {
+        transform: scale(95%);
     }
 
 form input, select {
     color: palegoldenrod;
-    background: linear-gradient(rgba(75, 75, 75, 0.6), rgba(36, 36, 36,0.6));
     border: none;
 }
 
-.filters{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
+    select option {
+        background: #252525;
+        border-color: black;
+    }
