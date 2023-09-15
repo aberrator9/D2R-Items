@@ -5,43 +5,100 @@
     ViewData["Title"] = "Weapon Bases";
 }
 
-<h1 class="text-center">@ViewData["Title"]</h1>
+<div class="d-inline-flex p-4 m-4 mt-0">
+
+    <h1 class="m-3">@ViewData["Title"]</h1>
+
+    <form asp-page="./Index" method="get" class="text-center gradient-bg-dark border-thin ms-5" style="padding:1rem 1.4rem">
+        <p class="text-lg-start mb-0">
+            Search name:
+        </p>
+        <p>
+            <input class="searchbox gradient-bg-dark border-thin" type="text" name="SearchString" value="@Model.CurrentFilter" />
+            <input type="submit" value="Search" class="btn-dark gradient-bg-light" />
+            <a asp-page="./Index">Clear</a>
+        </p>
+
+        <div class="input-group no-color">
+            <select asp-for="SelectedCharacterClass" asp-items="@Model.ClassSelectList" onchange="this.form.submit()" class="gradient-bg-light">
+                <option value="">All classes</option>
+            </select>
+            <div class="form-check m-0 align-content">
+                <div class="custom-check">
+                    <input type="checkbox" asp-for="ExcludeClassSpecificItems" onchange="this.form.submit()">
+                </div>
+                <label>
+                    Exclude class-specific
+                </label>
+            </div>
+
+        </div>
+    </form>
+</div>
 
 <table class="table table-border" style="border-color:rgb(69, 69, 69, 0.4);">
-    <thead class="sticky-top">
-        <tr>
+    <thead>
+        <tr class="sticky-top border-thin gradient-bg-dark">
             <th class="text-center">
-                <a asp-page="./Index" asp-route-sortOrder="@Model.NameSort">
+                <a asp-page="./Index"
+                   asp-route-searchString="@Model.CurrentFilter"
+                   asp-route-selectedCharacterClass="@Model.SelectedCharacterClass"
+                   asp-route-excludeClassSpecificItems="@Model.ExcludeClassSpecificItems"
+                   asp-route-sortOrder="@Model.NameSort">
                     @Html.DisplayNameFor(model => model.Weapons[0].Name)
                 </a>
             </th>
             <th class="text-center">
-                <a asp-page="./Index" asp-route-sortOrder="@Model.TierSort">
+                <a asp-page="./Index"
+                   asp-route-searchString="@Model.CurrentFilter"
+                   asp-route-selectedCharacterClass="@Model.SelectedCharacterClass"
+                   asp-route-excludeClassSpecificItems="@Model.ExcludeClassSpecificItems"
+                   asp-route-sortOrder="@Model.TierSort">
                     @Html.DisplayNameFor(model => model.Weapons[0].Tier)
                 </a>
             </th>
             <th class="text-center">
-                <a asp-page="./Index" asp-route-sortOrder="@Model.TypeSort">
+                <a asp-page="./Index"
+                   asp-route-searchString="@Model.CurrentFilter"
+                   asp-route-selectedCharacterClass="@Model.SelectedCharacterClass"
+                   asp-route-excludeClassSpecificItems="@Model.ExcludeClassSpecificItems"
+                   asp-route-sortOrder="@Model.TypeSort">
                     @Html.DisplayNameFor(model => model.Weapons[0].Type)
                 </a>
             </th>
             <th>
-                <a asp-page="./Index" asp-route-sortOrder="@Model.SocketsSort">
+                <a asp-page="./Index"
+                   asp-route-searchString="@Model.CurrentFilter"
+                   asp-route-selectedCharacterClass="@Model.SelectedCharacterClass"
+                   asp-route-excludeClassSpecificItems="@Model.ExcludeClassSpecificItems"
+                   asp-route-sortOrder="@Model.SocketsSort">
                     @Html.DisplayNameFor(model => model.Weapons[0].Sockets)
                 </a>
             </th>
             <th>
-                <a asp-page="./Index" asp-route-sortOrder="@Model.OneHandDmgSort">
+                <a asp-page="./Index"
+                   asp-route-searchString="@Model.CurrentFilter"
+                   asp-route-selectedCharacterClass="@Model.SelectedCharacterClass"
+                   asp-route-excludeClassSpecificItems="@Model.ExcludeClassSpecificItems"
+                   asp-route-sortOrder="@Model.OneHandDmgSort">
                     @Html.DisplayNameFor(model => model.Weapons[0].OneHandDmg)
                 </a>
             </th>
             <th>
-                <a asp-page="./Index" asp-route-sortOrder="@Model.TwoHandDmgSort">
+                <a asp-page="./Index"
+                   asp-route-searchString="@Model.CurrentFilter"
+                   asp-route-selectedCharacterClass="@Model.SelectedCharacterClass"
+                   asp-route-excludeClassSpecificItems="@Model.ExcludeClassSpecificItems"
+                   asp-route-sortOrder="@Model.TwoHandDmgSort">
                     @Html.DisplayNameFor(model => model.Weapons[0].TwoHandDmg)
                 </a>
             </th>
             <th>
-                <a asp-page="./Index" asp-route-sortOrder="@Model.SpeedSort">
+                <a asp-page="./Index"
+                   asp-route-searchString="@Model.CurrentFilter"
+                   asp-route-selectedCharacterClass="@Model.SelectedCharacterClass"
+                   asp-route-excludeClassSpecificItems="@Model.ExcludeClassSpecificItems"
+                   asp-route-sortOrder="@Model.SpeedSort">
                     @Html.DisplayNameFor(model => model.Weapons[0].Speed)
                 </a>
             </th>

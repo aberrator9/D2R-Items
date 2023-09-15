@@ -9,13 +9,13 @@
 
     <h1 class="m-3">@ViewData["Title"]</h1>
 
-    <form asp-page="./Index" method="get" class="text-center ms-5">
+    <form asp-page="./Index" method="get" class="text-center gradient-bg-dark border-thin ms-5" style="padding:1rem 1.4rem">
         <p class="text-lg-start mb-0">
             Search name:
         </p>
         <p>
             <input class="searchbox gradient-bg-dark border-thin" type="text" name="SearchString" value="@Model.CurrentFilter" />
-            <input type="submit" value="Search" class="btn-dark" />
+            <input type="submit" value="Search" class="btn-dark gradient-bg-light" />
             <a asp-page="./Index">Clear</a>
         </p>
 
@@ -38,7 +38,7 @@
 
 <table class="table table-border" style="border-color:rgb(69, 69, 69, 0.4);">
     <thead>
-        <tr class="gradient-bg-light">
+        <tr class="sticky-top border-thin gradient-bg-dark">
             <th class="text-center">
                 <a asp-page="./Index"
                    asp-route-searchString="@Model.CurrentFilter"

@@ -34,8 +34,8 @@ namespace D2RItems.Pages.Armors
 		public string CurrentFilter { get; set; }
 
 		[BindProperty]
-        public string SelectedCharacterClass { get; set; }
-        public SelectList ClassSelectList { get; set; }
+		public string SelectedCharacterClass { get; set; }
+		public SelectList ClassSelectList { get; set; }
 		private readonly string[] characterClasses ={
 			//"Amazon",
 			//"Assassin",
@@ -47,7 +47,7 @@ namespace D2RItems.Pages.Armors
 			};
 
 		[BindProperty]
-        public bool ExcludeClassSpecificItems { get; set; }
+		public bool ExcludeClassSpecificItems { get; set; }
 
 		public IList<Armor> Armors { get; set; } = default!;
 
@@ -62,8 +62,8 @@ namespace D2RItems.Pages.Armors
 			IQueryable<Armor> armors = _context.Armors.Select(a => a);
 
 			ClassSelectList = new SelectList(characterClasses.ToList());
-            SelectedCharacterClass = selectedCharacterClass;
-            ExcludeClassSpecificItems = excludeClassSpecificItems;
+			SelectedCharacterClass = selectedCharacterClass;
+			ExcludeClassSpecificItems = excludeClassSpecificItems;
 
 			CurrentSort = sortOrder;
 			NameSort = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
@@ -82,11 +82,11 @@ namespace D2RItems.Pages.Armors
 				{
 					if (searchString.StartsWith("*"))
 					{
-                        armors = armors.Where(a => a.Name.EndsWith(searchString.Substring(1, searchString.Length - 1)));
-                    }
+						armors = armors.Where(a => a.Name.EndsWith(searchString.Substring(1, searchString.Length - 1)));
+					}
 					else if (searchString.EndsWith("*"))
 					{
-                        armors = armors.Where(a => a.Name.StartsWith(searchString.Substring(0, searchString.Length - 1)));
+						armors = armors.Where(a => a.Name.StartsWith(searchString.Substring(0, searchString.Length - 1)));
 					}
 				}
 				else
@@ -95,69 +95,41 @@ namespace D2RItems.Pages.Armors
 				}
 			}
 
-			if(!string.IsNullOrEmpty(SelectedCharacterClass))
+			if (!string.IsNullOrEmpty(SelectedCharacterClass))
 			{
-			    armors = armors.Where(a => a.Slot.Contains(SelectedCharacterClass));
+				armors = armors.Where(a => a.Slot.Contains(SelectedCharacterClass));
 			}
 
-            if (ExcludeClassSpecificItems)
+			if (ExcludeClassSpecificItems)
+			{
+				// Workaround, since Contains can't be translated in 
+				// armors = armors.Where(a => characterClasses.Any(c => a.Slot.Contains(c)));
+				armors = armors.Where(a =>
+					!a.Slot.Contains("Barbarian") &&
+					!a.Slot.Contains("Druid") &&
+					!a.Slot.Contains("Necro") &&
+					!a.Slot.Contains("Paladin"));
+			}
+
+            armors = sortOrder switch
             {
-                // Workaround, since the EF Core flavor of Linq doesn't seem to support Contains inside nested query
-                // And class list will never change size
-                armors = armors.Where(a =>
-                    !a.Slot.Contains("Barbarian") &&
-                    !a.Slot.Contains("Druid") &&
-                    !a.Slot.Contains("Necro") &&
-                    !a.Slot.Contains("Paladin"));
-            }
+                "name_desc" =>      armors.OrderByDescending(a => a.Name),
+                "Slot" =>           armors.OrderBy(a => a.Slot),
+                "slot_desc" =>      armors.OrderByDescending(a => a.Slot),
+                "Tier" =>           armors.OrderBy(w => w.Tier),
+                "tier_desc" =>      armors.OrderByDescending(a => a.Tier),
+                "Sockets" =>        armors.OrderByDescending(a => a.Sockets),
+                "sockets_desc" =>   armors.OrderBy(a => a.Sockets),
+                "Weight" =>         armors.OrderBy(a => a.Weight),
+                "weight_desc" =>    armors.OrderByDescending(a => a.Weight),
+                "ReqStr" =>         armors.OrderBy(w => w.ReqStr),
+                "req_str_desc" =>   armors.OrderByDescending(w => w.ReqStr),
+                "Class" =>          armors.OrderByDescending(w => w.Class),
+                "class_desc" =>     armors.OrderBy(w => w.Class),
+                _ =>                armors.OrderBy(w => w.Name)
+            };
 
-            switch (sortOrder)
-			{
-				case "name_desc":
-					armors = armors.OrderByDescending(a => a.Name);
-					break;
-				case "Slot":
-					armors = armors.OrderBy(a => a.Slot);
-					break;
-				case "slot_desc":
-					armors = armors.OrderByDescending(a => a.Slot);
-					break;
-				case "Tier":
-					armors = armors.OrderBy(w => w.Tier);
-					break;
-				case "tier_desc":
-					armors = armors.OrderByDescending(a => a.Tier);
-					break;
-				case "Sockets":
-					armors = armors.OrderByDescending(a => a.Sockets);
-					break;
-				case "sockets_desc":
-					armors = armors.OrderBy(a => a.Sockets);
-					break;
-				case "Weight":
-					armors = armors.OrderBy(a => a.Weight);
-					break;
-				case "weight_desc":
-					armors = armors.OrderByDescending(a => a.Weight);
-					break;
-				case "ReqStr":
-					armors = armors.OrderBy(w => w.ReqStr);
-					break;
-				case "req_str_desc":
-					armors = armors.OrderByDescending(w => w.ReqStr);
-					break;
-				case "Class":
-					armors = armors.OrderByDescending(w => w.Class);
-					break;
-				case "class_desc":
-					armors = armors.OrderBy(w => w.Class);
-					break;
-				default:
-					armors = armors.OrderBy(w => w.Name);
-					break;
-			}
-
-			Armors = await armors.AsNoTracking().ToListAsync();
+            Armors = await armors.AsNoTracking().ToListAsync();
 		}
 	}
 }
