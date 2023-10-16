@@ -7,7 +7,7 @@
   "parameters": {
     "resourceGroupName": {
       "type": "string",
-      "defaultValue": "D2RItems20230921154551ResourceGroup",
+      "defaultValue": "D2RItems20231015224104ResourceGroup",
       "metadata": {
         "description": "Name of the resource group for the resource. It is recommended to put resources under same resource group for better tracking."
       }
@@ -21,7 +21,7 @@
     },
     "resourceName": {
       "type": "string",
-      "defaultValue": "D2RItems",
+      "defaultValue": "D2RItems20231015224104",
       "metadata": {
         "description": "Name of the main resource to be created by this template."
       }

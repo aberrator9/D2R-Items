@@ -1,299 +1,299 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\D2RItems.bundle.scp.css",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\D2RItems.bundle.scp.css",
       "PackagePath": "staticwebassets\\D2RItems.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\data\\armor.json",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\data\\armor.json",
       "PackagePath": "staticwebassets\\data\\armor.json"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\data\\runes.json",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\data\\runes.json",
       "PackagePath": "staticwebassets\\data\\runes.json"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\data\\sets.json",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\data\\sets.json",
       "PackagePath": "staticwebassets\\data\\sets.json"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\data\\uniqueitems.json",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\data\\uniqueitems.json",
       "PackagePath": "staticwebassets\\data\\uniqueitems.json"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\data\\weapons.json",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\data\\weapons.json",
       "PackagePath": "staticwebassets\\data\\weapons.json"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\font\\AvQest.ttf",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\font\\AvQest.ttf",
       "PackagePath": "staticwebassets\\font\\AvQest.ttf"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\font\\Diabolica-VRBB.ttf",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\font\\Diabolica-VRBB.ttf",
       "PackagePath": "staticwebassets\\font\\Diabolica-VRBB.ttf"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\img\\border1.png",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\img\\border1.png",
       "PackagePath": "staticwebassets\\img\\border1.png"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\img\\concrete-bg.webp",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\img\\concrete-bg.webp",
       "PackagePath": "staticwebassets\\img\\concrete-bg.webp"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\img\\crystal-sword.png",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\img\\crystal-sword.png",
       "PackagePath": "staticwebassets\\img\\crystal-sword.png"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\img\\light-plate.png",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\img\\light-plate.png",
       "PackagePath": "staticwebassets\\img\\light-plate.png"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\img\\tick-off.png",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\img\\tick-off.png",
       "PackagePath": "staticwebassets\\img\\tick-off.png"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\img\\tick-on.png",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\img\\tick-on.png",
       "PackagePath": "staticwebassets\\img\\tick-on.png"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\qbdth\\repos\\D2R-Items\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\qbdth\\Repos\\D2R-Items\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

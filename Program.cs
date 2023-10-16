@@ -4,12 +4,16 @@ using D2RItems.Data;
 using D2RItems.Models;
 using System.Diagnostics;
 using Microsoft.Extensions.Hosting.Internal;
+using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Diagnostics;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+var connection = builder.Configuration.GetConnectionString("D2RItemsContext");
 builder.Services.AddDbContext<D2RItemsContext>(options =>
-	options.UseSqlServer(builder.Configuration.GetConnectionString("D2RItemsContext") ?? throw new InvalidOperationException("Connection string 'D2RItemsContext' not found.")));
+    options.UseSqlServer(connection));
 
 builder.Services.AddSingleton(builder.Environment);
 
@@ -26,9 +30,11 @@ using (var scope = app.Services.CreateScope())
 if (!app.Environment.IsDevelopment())
 {
 	app.UseExceptionHandler("/Error");
-	// The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-	app.UseHsts();
+
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    app.UseHsts();
 }
+
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
