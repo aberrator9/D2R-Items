@@ -13,6 +13,7 @@ namespace D2RItems.Data
         public D2RItemsContext (DbContextOptions<D2RItemsContext> options)
             : base(options)
         {
+            this.Database.EnsureCreated();
         }
 
         public DbSet<D2RItems.Models.Weapon> Weapons { get; set; } = default!;
