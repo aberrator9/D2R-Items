@@ -31,6 +31,7 @@ public class PopulateData
                 foreach (var item in weaponsJson)
                 {
                     int twoHandDmg = 0;
+
                     if (item.Value["2handmaxdam"] != null)
                     {
                         twoHandDmg = (int)item.Value["2handmaxdam"];
@@ -49,7 +50,6 @@ public class PopulateData
                     {
                         tier = "Elite";
                     }
-
 
                     context.Weapons.Add(
                         new Weapon()

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using D2RItems.Models;
+using Microsoft.EntityFrameworkCore.Migrations.Operations;
 
 namespace D2RItems.Data
 {
@@ -19,7 +20,8 @@ namespace D2RItems.Data
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
-			modelBuilder.Entity<Weapon>().ToTable("Weapon");
+
+            modelBuilder.Entity<Weapon>().ToTable("Weapon");
             modelBuilder.Entity<Armor>().ToTable("Armor");
         }
 	}

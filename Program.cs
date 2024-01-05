@@ -7,14 +7,24 @@ using Microsoft.Extensions.Hosting.Internal;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.HttpOverrides;
+using MySqlConnector;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 
-var connection = builder.Configuration.GetConnectionString("D2RItemsContext");
-builder.Services.AddDbContext<D2RItemsContext>(options =>
-    options.UseSqlServer(connection));
+var connectionString = builder.Configuration.GetConnectionString("D2RItemsContext");
+
+if (builder.Environment.IsDevelopment())
+{
+    builder.Services.AddDbContext<D2RItemsContext>(options =>
+        options.UseSqlServer(connectionString));
+}
+else
+{
+    builder.Services.AddDbContext<D2RItemsContext>(dbContextOptions =>
+        dbContextOptions.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+}
 
 builder.Services.AddSingleton(builder.Environment);
 
@@ -36,12 +46,13 @@ using (var scope = app.Services.CreateScope())
 if (!app.Environment.IsDevelopment())
 {
     app.UseHttpsRedirection();
-	app.UseExceptionHandler("/Error");
+    app.UseExceptionHandler("/Error");
 
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
+app.UseDeveloperExceptionPage();
 
 app.UseStaticFiles();
 
